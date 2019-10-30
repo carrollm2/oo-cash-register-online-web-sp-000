@@ -32,8 +32,8 @@ class CashRegister
     all_transactions.each do |transaction_event|
       counter = 0
       transaction_event.each do |item_name, price|
-        while counter < v[1]
-          items.push(k)
+        while counter < quantity[1]
+          items.push(item_name)
           counter += 1
         end
       end
