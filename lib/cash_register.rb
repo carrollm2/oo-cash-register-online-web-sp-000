@@ -1,6 +1,6 @@
 class CashRegister
 
-  attr_accessor :total, :discount, :transactions
+  attr_accessor :total, :discount, :all_transactions
 
   def initialize(discount = 0)
     @total = 0.0
@@ -11,9 +11,9 @@ class CashRegister
   def add_item(item, cost, quantity=1)
     transaction = {}
     self.total += cost * quantity
-    #transaction[item] = cost * quantity
+
     transaction[item] = [cost, quantity]
-    transactions.push(transaction)
+    all_transactions.push(transaction)
   end
 
   def apply_discount
@@ -29,9 +29,9 @@ class CashRegister
 
   def items
     items = []
-    transactions.each do |t|
+    all_transactions.each do |transaction_event|
       counter = 0
-      t.each do |k, v|
+      transaction_event.each do |item_name, price|
         while counter < v[1]
           items.push(k)
           counter += 1
@@ -55,27 +55,3 @@ class CashRegister
 end
 
 
-# a = CashRegister.new()
-#
-# a.add_item("computer", 1000.0, 4)
-# print "total before discount", a.total, "\n"
-# a.apply_discount
-# print "total after discount", a.total, "\n"
-# a.add_item("eggs", 1.99)
-# a.add_item("tomato", 1.76, 3)
-# print "total after adding all items", a.total, "\n"
-#
-# print "all items", a.items, "\n"
-#
-# print "all transactions", a.transactions, "\n"
-# test_var = a.transactions.pop()
-# print "last transaction", test_var, "\n"
-#
-# test_var.each do |z|
-#   print z[1][0]
-#
-#
-# end
-
-#a.void_last_transaction
-#print a.total
