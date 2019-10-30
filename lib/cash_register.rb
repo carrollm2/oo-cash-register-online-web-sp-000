@@ -54,3 +54,12 @@ class CashRegister
   end
 
 end
+
+
+cash_register = CashRegister.new()
+
+cash_register.add_item("Lucky Charms", 4.5)
+cash_register.add_item("Ritz Crackers", 5.0)
+cash_register.add_item("Justin's Peanut Butter Cups", 2.50, 2)
+
+cash_register.items
