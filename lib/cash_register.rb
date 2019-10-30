@@ -59,7 +59,7 @@ end
 
 
 # a = CashRegister.new()
-# 
+#
 # a.add_item("computer", 1000.0, 4)
 # print "total before discount", a.total, "\n"
 # a.apply_discount
@@ -67,17 +67,17 @@ end
 # a.add_item("eggs", 1.99)
 # a.add_item("tomato", 1.76, 3)
 # print "total after adding all items", a.total, "\n"
-# 
+#
 # print "all items", a.items, "\n"
-# 
+#
 # print "all transactions", a.transactions, "\n"
 # test_var = a.transactions.pop()
 # print "last transaction", test_var, "\n"
-# 
+#
 # test_var.each do |z|
 #   print z[1][0]
-# 
-# 
+#
+#
 # end
 
 #a.void_last_transaction
