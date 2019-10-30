@@ -73,6 +73,6 @@ test_var.each do |z|
   print z[0], z[1]
 
 end
-print "last transaction price", test_var.values_st, "\n"
+
 #a.void_last_transaction
 #print a.total
