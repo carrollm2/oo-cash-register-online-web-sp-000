@@ -70,7 +70,7 @@ test_var = a.transactions.pop()
 print "last transaction", test_var, "\n"
 
 test_var.each do |z|
-  print z[0][0]
+  print z
 
 
 end
