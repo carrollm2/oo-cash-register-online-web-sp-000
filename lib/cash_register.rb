@@ -44,7 +44,7 @@ class CashRegister
   def void_last_transaction
 
     voided_transaction_cost = 0.0
-    voided_transaction = transactions.pop()
+    voided_transaction = all_transactions.pop()
 
     voided_transaction.each do |voided|
       voided_transaction_cost = voided[1][0] * voided[1][1]
