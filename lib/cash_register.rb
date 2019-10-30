@@ -68,6 +68,6 @@ print "all items", a.items, "\n"
 print "all transactions", a.transactions, "\n"
 test_var = a.transactions.pop()
 print "last transaction", test_var, "\n"
-print "last transaction price", test_var[0], "\n"
+print "last transaction price", test_var.key, "\n"
 #a.void_last_transaction
 #print a.total
