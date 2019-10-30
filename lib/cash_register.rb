@@ -63,3 +63,5 @@ cash_register.add_item("Ritz Crackers", 5.0)
 cash_register.add_item("Justin's Peanut Butter Cups", 2.50, 2)
 
 cash_register.items
+
+cash_register.void_last_transaction
