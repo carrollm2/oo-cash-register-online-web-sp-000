@@ -71,7 +71,7 @@ print "last transaction", test_var, "\n"
 
 test_var.each do |z|
   print z[0]
-  print z[1]
+
 
 end
 
